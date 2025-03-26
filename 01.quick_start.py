@@ -12,9 +12,9 @@ from langchain_core.runnables import RunnablePassthrough
 
 #### INDEXING ####
 # ----------------- 配置项 ---------------------------- #
-data_file = "../data/中华人民共和国证券法(2019修订).pdf"
-model_path = "/data/models/Baichuan2-13B-Chat"
-embed_path = "/data/models/bge-large-zh-v1.5"
+data_file = "./data/中华人民共和国证券法(2019修订).pdf"
+model_path = "/XXX/XXX/glm-4-9b-chat"
+embed_path = "/XXX/XXX/bge-large-zh-v1.5"
 # ----------------- 加载embedding模型 ----------------- #
 embeddings = HuggingFaceEmbeddings(
     model_name=embed_path,
