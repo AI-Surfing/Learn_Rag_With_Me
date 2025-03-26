@@ -1,11 +1,10 @@
 import torch
-from langchain.document_loaders import PyPDFLoader
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain import HuggingFacePipeline
-from transformers import AutoTokenizer, pipeline, AutoModelForCausalLM
-from langchain import PromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings, HuggingFacePipeline
+from transformers import AutoTokenizer, pipeline, AutoModelForCausalLM
+from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 
